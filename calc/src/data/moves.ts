@@ -1674,6 +1674,53 @@ const BW: {[name: string]: MoveData} = extend(true, {}, DPP, BW_PATCH);
 
 delete BW['Faint Attack'];
 
+const BB_PATCH: {[name: string]: DeepPartial<MoveData>} = {           
+  'Pin Missile': {bp: 25},
+  'Spike Cannon': {bp: 25},
+  'Comet Punch': {bp: 25},
+  'Arm Thrust': {bp: 25},
+  Absorb: {bp: 50},
+  'Mega Drain': {bp: 50},
+  Incinerate: {bp: 50},
+  'Struggle Bug': {bp: 50},
+  Twister: {bp: 50},
+  Snarl: {bp: 60},
+  Cut: {bp: 60, type: 'Grass'},
+  'Shadow Punch': {bp: 70},
+  'Magnet Bomb': {bp: 70},
+  'Shock Wave': {bp: 70},
+  'Wing Attack': {bp: 75},
+  'Flame Wheel': {bp: 75},
+  'Ice Fang': {bp: 75},
+  'Fire Fang': {bp: 75},
+  'Thunder Fang': {bp: 75},
+  Bulldoze: {bp: 80},
+  'Shadow Claw': {bp: 80},
+  'Rock Slide': {bp: 80},
+  'Sky Drop': {bp: 80},
+  Steamroller: {bp: 80},
+  'Fire Punch': {bp: 80},
+  ThunderPunch: {bp: 80},
+  'Ice Punch': {bp: 80},
+  Strength: {bp: 85, type: 'Rock'},
+  Waterfall: {bp: 85},
+  'Energy Ball': {bp: 90},
+  'Dark Pulse': {bp: 90},
+  'Shadow Ball': {bp: 90},
+  'Horn Leech': {bp: 90},
+  'Needle Arm': {bp: 90},
+  'Power Gem': {bp: 90},
+  'Icicle Crash': {bp: 90},
+  Dig: {bp: 100},
+  Dive: {bp: 100},
+  Fly: {bp: 100},
+  'Night Daze': {bp: 100},
+  Glaciate: {bp: 100},
+  'Freeze Shock': {bp: 180},
+  'Ice Burn': {bp: 180}
+};
+const BB: {[name: string]: MoveData} = extend(true, {}, BW, BB_PATCH);
+
 const XY_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Ice Ball': {isBullet: true},
   'Knock Off': {bp: 65},
@@ -4146,7 +4193,7 @@ for (const m of LGPE_MOVES) {
   delete SS[m];
 }
 
-export const MOVES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS];
+export const MOVES = [{}, RBY, GSC, ADV, DPP, BB, XY, SM, SS];
 
 export class Moves implements I.Moves {
   private readonly gen: I.GenerationNum;
