@@ -1674,7 +1674,7 @@ const BW: {[name: string]: MoveData} = extend(true, {}, DPP, BW_PATCH);
 
 delete BW['Faint Attack'];
 
-const BB_PATCH: {[name: string]: DeepPartial<MoveData>} = {           
+const BB_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Pin Missile': {bp: 25},
   'Spike Cannon': {bp: 25},
   'Comet Punch': {bp: 25},
@@ -1717,7 +1717,7 @@ const BB_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Night Daze': {bp: 100},
   Glaciate: {bp: 100},
   'Freeze Shock': {bp: 180},
-  'Ice Burn': {bp: 180}
+  'Ice Burn': {bp: 180},
 };
 const BB: {[name: string]: MoveData} = extend(true, {}, BW, BB_PATCH);
 
