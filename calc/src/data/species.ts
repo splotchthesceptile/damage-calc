@@ -5017,7 +5017,7 @@ delete BW['Pichu'].otherFormes;
 delete BW['Pichu-Spiky-eared'];
 
 const BB_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
-  //Blaze black changes
+  // Blaze black changes
   Butterfree: {bs: {sa: 95, sp: 90}},
   Beedrill: {bs: {at: 95, sp: 95}},
   Pidgeot: {bs: {hp: 105, at: 90, df: 85}},
@@ -5040,7 +5040,8 @@ const BB_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   Poliwrath: {bs: {at: 105}},
   Victreebel: {bs: {hp: 90, at: 115, sp: 80}},
   Golem: {bs: {hp: 90}},
-  'Farfetch\u2019d': {types: ['Fighting', 'Flying'], bs: {hp: 70, at: 105, df: 70, sa: 50, sp: 110}},
+  'Farfetch\u2019d': {types: ['Fighting', 'Flying'], bs: {
+    hp: 70, at: 105, df: 70, sa: 50, sp: 110}},
   Dewgong: {bs: {sa: 85}},
   Onix: {bs: {at: 70}},
   Marowak: {bs: {sp: 70}},
@@ -5155,7 +5156,7 @@ const BB_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   Golurk: {bs: {hp: 99, df: 90}},
   Bisharp: {bs: {sp: 90}},
   Heatmor: {bs: {at: 100, df: 70, sa: 115, sp: 70}},
-  Durant: {bs: {hp: 75, at: 111}}
+  Durant: {bs: {hp: 75, at: 111}},
 };
 const BB: {[name: string]: SpeciesData} = extend(true, {}, BW, BB_PATCH);
 
